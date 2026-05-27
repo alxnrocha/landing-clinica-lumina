@@ -1,0 +1,121 @@
+/* =========================
+   Design tokens
+========================= */
+
+:root {
+  --color-background: #f8f7f4;
+  --color-surface: #ffffff;
+  --color-text: #1f2933;
+  --color-muted: #64748b;
+  --color-primary: #2f6f73;
+  --color-primary-dark: #24585b;
+  --color-accent: #c89b7b;
+  --color-border: #e2e8f0;
+
+  --font-family-base: Arial, Helvetica, sans-serif;
+
+  --container-width: 1120px;
+  --spacing-section: 4rem;
+  --radius-card: 0.5rem;
+  --transition-base: 180ms ease;
+}
+
+/* =========================
+   Reset
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family-base);
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.6;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* =========================
+   Base elements
+========================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* =========================
+   Accessibility
+========================= */
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+/* =========================
+   Layout helpers
+========================= */
+
+section {
+  padding: var(--spacing-section) 1.25rem;
+}
+
+header,
+footer {
+  padding: 1.25rem;
+}
+
+.container {
+  width: min(100% - 2.5rem, var(--container-width));
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+}
