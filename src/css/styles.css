@@ -260,7 +260,7 @@ footer {
 
 .hero-content {
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+    grid-template-columns: minmax(0, 1fr) minmax(20rem, 1fr);
     align-items: center;
     gap: 3rem;
 }
@@ -298,12 +298,28 @@ footer {
     margin-top: 2rem;
 }
 
+.hero-media {
+    position: relative;
+}
+
+.hero-media img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: var(--radius-card);
+    box-shadow: 0 1.5rem 4rem rgba(31, 41, 51, 0.12);
+}
+
 .hero-card {
-    padding: 2rem;
+    position: absolute;
+    right: -1rem;
+    bottom: 2rem;
+    width: min(82%, 22rem);
+    padding: 1.5rem;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-card);
-    background: var(--color-surface);
-    box-shadow: 0 1.5rem 4rem rgba(31, 41, 51, 0.08);
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 1.5rem 4rem rgba(31, 41, 51, 0.14);
 }
 
 .hero-card-label {
@@ -358,7 +374,9 @@ footer {
     }
 
     .hero-card {
-        padding: 1.5rem;
+        position: static;
+        width: auto;
+        margin-top: 1rem;
     }
 }
 
