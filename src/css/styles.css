@@ -712,3 +712,129 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================
+   Contact
+========================= */
+
+.contact {
+    background: var(--color-background);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(20rem, 1.15fr);
+    gap: 3rem;
+    align-items: start;
+}
+
+.contact .section-heading {
+    margin-bottom: 0;
+}
+
+.contact-details {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-details div {
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.contact-details strong {
+    display: block;
+    color: var(--color-primary-dark);
+}
+
+.contact-details span,
+.contact-details a {
+    display: inline-block;
+    margin-top: 0.25rem;
+    color: var(--color-muted);
+}
+
+.contact-details a {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.contact-details .whatsapp-button {
+    display: inline-flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    border-radius: 999px;
+    color: #ffffff;
+    background: #25d366;
+    transition:
+        background var(--transition-base),
+        transform var(--transition-base);
+}
+
+.contact-details .whatsapp-button:hover {
+    color: #ffffff;
+    background: #1fb457;
+    transform: translateY(-1px);
+}
+
+.whatsapp-button svg {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
+
+.contact-form {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+}
+
+.form-field {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.form-field label {
+    color: var(--color-primary-dark);
+    font-weight: 700;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    padding: 0.875rem 1rem;
+    color: var(--color-text);
+    background: var(--color-background);
+}
+
+.form-field textarea {
+    resize: vertical;
+}
+
+.form-note {
+    color: var(--color-muted);
+    font-size: 0.875rem;
+}
+
+@media (max-width: 900px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 620px) {
+    .contact-form {
+        padding: 1.5rem;
+    }
+}
