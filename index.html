@@ -371,7 +371,9 @@
                 <form class="contact-form" action="#" method="post" novalidate>
                     <div class="form-field">
                         <label for="name">Nombre completo</label>
-                        <input id="name" name="name" type="text" autocomplete="name" required />
+                        <input id="name" name="name" type="text" autocomplete="name" required
+                            aria-describedby="name-error" />
+                        <p class="form-error" id="name-error"></p>
                     </div>
 
                     <div class="form-field">
