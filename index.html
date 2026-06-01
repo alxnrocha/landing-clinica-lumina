@@ -17,8 +17,13 @@
             <a class="brand" href="#inicio" aria-label="Ir al inicio de Clínica Lumina">
                 <img src="./src/assets/images/logo-clinica-lumina.webp" alt="Clínica Lumina" />
             </a>
-
-            <ul class="nav-list">
+            <button class="nav-toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false"
+                aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-list" id="primary-navigation">
                 <li><a href="#tratamientos">Tratamientos</a></li>
                 <li><a href="#beneficios">Beneficios</a></li>
                 <li><a href="#clinica">La clínica</a></li>
@@ -275,40 +280,50 @@
 
                 <div class="faq-list">
                     <article class="faq-item">
-                        <h3>¿La primera valoración es necesaria?</h3>
-                        <p>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            ¿La primera valoración es necesaria?
+                        </button>
+                        <p class="faq-answer">
                             Sí. Nos permite conocer tus objetivos, revisar el estado de la piel y
                             recomendar un tratamiento adecuado a tu caso.
                         </p>
                     </article>
 
                     <article class="faq-item">
-                        <h3>¿Los resultados son inmediatos?</h3>
-                        <p>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            ¿Los resultados son inmediatos?
+                        </button>
+                        <p class="faq-answer">
                             Depende del tratamiento. Algunos cambios pueden apreciarse antes, pero
                             otros requieren evolución progresiva y seguimiento profesional.
                         </p>
                     </article>
 
                     <article class="faq-item">
-                        <h3>¿Puedo pedir información antes de reservar?</h3>
-                        <p>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            ¿Puedo pedir información antes de reservar?
+                        </button>
+                        <p class="faq-answer">
                             Sí. Puedes contactar con la clínica para resolver dudas iniciales antes
                             de solicitar una cita de valoración.
                         </p>
                     </article>
 
                     <article class="faq-item">
-                        <h3>¿Los tratamientos tienen cuidados posteriores?</h3>
-                        <p>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            ¿Los tratamientos tienen cuidados posteriores?
+                        </button>
+                        <p class="faq-answer">
                             En muchos casos sí. Te explicaremos las recomendaciones necesarias
                             antes y después de cada procedimiento.
                         </p>
                     </article>
 
                     <article class="faq-item">
-                        <h3>¿Dónde está ubicada Clínica Lumina?</h3>
-                        <p>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            ¿Dónde está ubicada Clínica Lumina?
+                        </button>
+                        <p class="faq-answer">
                             Clínica Lumina es una clínica ficticia situada en Madrid, creada como
                             proyecto de portfolio frontend.
                         </p>
@@ -342,33 +357,30 @@
 
                         <div>
                             <strong>WhatsApp</strong>
-                            <a
-                                class="whatsapp-button"
-                                href="https://wa.me/34000000000"
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label="Escribir por WhatsApp"
-                            >
+                            <a class="whatsapp-button" href="https://wa.me/34000000000" target="_blank" rel="noreferrer"
+                                aria-label="Escribir por WhatsApp">
                                 <svg aria-hidden="true" viewBox="0 0 24 24">
-                                    <path
-                                        fill="currentColor"
-                                        d="M12.04 2C6.57 2 2.13 6.43 2.13 11.9c0 1.74.46 3.45 1.33 4.95L2 22l5.28-1.39a9.86 9.86 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.43 9.91-9.9A9.92 9.92 0 0 0 12.04 2Zm5.83 14.17c-.24.68-1.41 1.31-1.95 1.36-.5.05-1.13.07-1.82-.11-.42-.11-.96-.31-1.66-.61-2.92-1.26-4.82-4.19-4.97-4.38-.15-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.27-.3.59-.37.79-.37h.57c.18.01.43-.07.67.51.25.6.85 2.08.93 2.23.07.15.12.33.02.53-.1.2-.15.32-.3.49-.15.17-.32.38-.46.51-.15.15-.31.31-.13.61.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.2-.22.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.13.07.75-.17 1.43Z"
-                                    />
+                                    <path fill="currentColor"
+                                        d="M12.04 2C6.57 2 2.13 6.43 2.13 11.9c0 1.74.46 3.45 1.33 4.95L2 22l5.28-1.39a9.86 9.86 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.43 9.91-9.9A9.92 9.92 0 0 0 12.04 2Zm5.83 14.17c-.24.68-1.41 1.31-1.95 1.36-.5.05-1.13.07-1.82-.11-.42-.11-.96-.31-1.66-.61-2.92-1.26-4.82-4.19-4.97-4.38-.15-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.27-.3.59-.37.79-.37h.57c.18.01.43-.07.67.51.25.6.85 2.08.93 2.23.07.15.12.33.02.53-.1.2-.15.32-.3.49-.15.17-.32.38-.46.51-.15.15-.31.31-.13.61.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.2-.22.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.07.13.07.75-.17 1.43Z" />
                                 </svg>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <form class="contact-form" action="#" method="post">
+                <form class="contact-form" action="#" method="post" novalidate>
                     <div class="form-field">
                         <label for="name">Nombre completo</label>
-                        <input id="name" name="name" type="text" autocomplete="name" />
+                        <input id="name" name="name" type="text" autocomplete="name" required
+                            aria-describedby="name-error" />
+                        <p class="form-error" id="name-error"></p>
                     </div>
 
                     <div class="form-field">
                         <label for="email">Email</label>
-                        <input id="email" name="email" type="email" autocomplete="email" />
+                        <input id="email" name="email" type="email" autocomplete="email" required
+                            aria-describedby="email-error" />
+                        <p class="form-error" id="email-error"></p>
                     </div>
 
                     <div class="form-field">
@@ -378,24 +390,28 @@
 
                     <div class="form-field">
                         <label for="treatment">Tratamiento de interés</label>
-                        <select id="treatment" name="treatment">
+                        <select id="treatment" name="treatment" required aria-describedby="treatment-error">
                             <option value="">Selecciona una opción</option>
                             <option value="rejuvenecimiento">Rejuvenecimiento facial</option>
                             <option value="acido-hialuronico">Ácido hialurónico</option>
                             <option value="limpieza-facial">Limpieza facial avanzada</option>
                             <option value="corporal">Tratamientos corporales</option>
                         </select>
+                        <p class="form-error" id="treatment-error"></p>
                     </div>
 
                     <div class="form-field">
                         <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="5"
+                        <textarea id="message" name="message" rows="5" required aria-describedby="message-error"
                             placeholder="Cuéntanos qué te gustaría mejorar o qué dudas tienes."></textarea>
+                        <p class="form-error" id="message-error"></p>
                     </div>
 
                     <button class="button button-primary" type="submit">
                         Enviar solicitud
                     </button>
+
+                    <p class="form-success" aria-live="polite"></p>
 
                     <p class="form-note">
                         Formulario visual de portfolio. No envía datos reales todavía.
