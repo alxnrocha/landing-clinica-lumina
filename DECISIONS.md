@@ -200,10 +200,8 @@ Si este proyecto se adaptara a un cliente real, añadiría:
 
 ## 14. Estado Actual
 
-La landing page está funcional.
+La landing page está finalizada como proyecto de portfolio frontend.
 
-Próximos pasos:
+El proyecto incluye estructura semántica, diseño responsive, interacciones con JavaScript, validación visual de formulario, documentación técnica, capturas desktop y móvil, y deploy público en GitHub Pages.
 
-- añadir screenshots;
-- publicar deploy;
-- revisar la presentación final del repositorio.
+Las mejoras descritas en la sección anterior quedan fuera del alcance actual porque corresponden a una posible adaptación para un cliente real.

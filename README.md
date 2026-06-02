@@ -112,7 +112,7 @@ Las decisiones técnicas principales están documentadas en:
 
 ## Estado
 
-Landing page funcional. Pendiente de añadir screenshots, deploy y revisión final de presentación.
+Landing page finalizada y publicada como proyecto de portfolio frontend.
 
 ## Autor
 
