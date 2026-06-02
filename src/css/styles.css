@@ -1240,6 +1240,23 @@ footer {
     color: var(--color-primary-dark);
     font-weight: 700;
     background: rgba(255, 255, 255, 0.65);
+    transition:
+        background var(--transition-base),
+        border-color var(--transition-base),
+        color var(--transition-base),
+        transform var(--transition-base);
+}
+
+.footer-social a:hover {
+    color: #ffffff;
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    transform: translateY(-1px);
+}
+
+.footer-social img {
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 .footer-bottom {
