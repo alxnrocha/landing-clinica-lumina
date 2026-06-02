@@ -100,9 +100,9 @@ También puede abrirse directamente el archivo `index.html` en el navegador.
 
 ## Deploy
 
-Pendiente de publicar.
+Proyecto publicado con GitHub Pages:
 
-El proyecto puede desplegarse como sitio estático en Vercel, Netlify o GitHub Pages.
+[https://alxnrocha.github.io/landing-clinica-lumina/](https://alxnrocha.github.io/landing-clinica-lumina/)
 
 ## Documentación Técnica
 
