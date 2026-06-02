@@ -90,13 +90,13 @@ También puede abrirse directamente el archivo `index.html` en el navegador.
 
 ## Screenshots
 
-Pendiente de añadir.
+### Desktop
 
-```txt
-screenshots/
-├── desktop.png
-└── mobile.png
-```
+![Vista desktop de Clínica Lumina](./screenshots/desktop.png)
+
+### Mobile
+
+![Vista mobile de Clínica Lumina](./screenshots/mobile.png)
 
 ## Deploy
 
