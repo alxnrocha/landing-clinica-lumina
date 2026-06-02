@@ -5,6 +5,7 @@ const faqQuestions = document.querySelectorAll(".faq-question");
 const contactForm = document.querySelector(".contact-form");
 
 if (navToggle && navList) {
+  // Keeps the visual mobile menu state synchronized with accessible ARIA labels.
   navToggle.addEventListener("click", function () {
     const isOpen = navToggle.getAttribute("aria-expanded") === "true";
 
@@ -18,6 +19,7 @@ if (navToggle && navList) {
   });
 
   navLinks.forEach(function (link) {
+    // Closes the mobile menu after navigation so the next section is visible immediately.
     link.addEventListener("click", function () {
       navToggle.setAttribute("aria-expanded", "false");
       navToggle.setAttribute("aria-label", "Abrir menú de navegación");
@@ -28,6 +30,7 @@ if (navToggle && navList) {
 }
 
 faqQuestions.forEach(function (question) {
+  // Opens one FAQ answer at a time and closes the previously active item.
   question.addEventListener("click", function () {
     const currentItem = question.closest(".faq-item");
     const isOpen = question.getAttribute("aria-expanded") === "true";
@@ -49,6 +52,7 @@ if (contactForm) {
   const formFields = contactForm.querySelectorAll("[aria-describedby]");
 
   formFields.forEach(function (field) {
+    // Clears field feedback as soon as the visitor edits the value again.
     field.addEventListener("input", function () {
       clearFieldError(field);
       successMessage.textContent = "";
@@ -61,6 +65,7 @@ if (contactForm) {
   });
 
   contactForm.addEventListener("submit", function (event) {
+    // This portfolio form is visual only, so JavaScript prevents a real backend request.
     event.preventDefault();
 
     const formData = new FormData(contactForm);
@@ -121,6 +126,7 @@ if (contactForm) {
 }
 
 function showFieldError(field, message) {
+  // Error text is connected to the field through aria-describedby in the HTML.
   const errorElementId = field.getAttribute("aria-describedby");
   const errorElement = document.querySelector(`#${errorElementId}`);
 
