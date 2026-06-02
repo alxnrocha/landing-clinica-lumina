@@ -58,6 +58,10 @@ svg {
     max-width: 100%;
 }
 
+img {
+    height: auto;
+}
+
 button,
 input,
 textarea,
@@ -244,6 +248,10 @@ footer {
         padding-block: 1rem;
     }
 
+    .brand img {
+        width: 8.5rem;
+    }
+
     .nav-toggle {
         position: relative;
         display: inline-flex;
@@ -262,6 +270,12 @@ footer {
 
     .nav-list.is-open {
         display: flex;
+    }
+
+    .nav-list a {
+        display: block;
+        width: 100%;
+        padding-block: 0.25rem;
     }
 
     .nav-cta {
@@ -521,11 +535,12 @@ footer {
 
 @media (max-width: 820px) {
     .hero {
-        padding-block: 3.5rem;
+        padding-block: 3.5rem 3.75rem;
     }
 
     .hero-content {
         grid-template-columns: 1fr;
+        gap: 2.5rem;
     }
 
     .hero h1 {
@@ -538,8 +553,21 @@ footer {
 
     .hero-card {
         position: static;
-        width: auto;
-        margin-top: 1rem;
+        width: 92%;
+        min-height: 0;
+        margin: 1rem auto 0.35rem;
+        padding: 1.35rem 1.25rem 1.55rem;
+    }
+
+    .hero-card-label,
+    .hero-card-title {
+        display: none;
+    }
+
+    .hero-card-list {
+        gap: 0.75rem;
+        margin-top: 0;
+        font-size: 0.95rem;
     }
 
     .hero-media {
@@ -548,18 +576,19 @@ footer {
     }
 
     .hero-media::before {
-        inset: 1rem;
+        inset: 1rem 0 0.2rem;
         border-radius: var(--radius-card);
     }
 
     .hero-media img {
+        aspect-ratio: 1.1 / 0.82;
         border-radius: var(--radius-card);
     }
 }
 
 @media (max-width: 520px) {
     .hero h1 {
-        font-size: 2.35rem;
+        font-size: 2.65rem;
     }
 
     .hero-actions {
@@ -571,7 +600,14 @@ footer {
     }
 
     .hero-features {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-inline: auto;
+    }
+
+    .hero-features li {
+        max-width: none;
     }
 }
 
@@ -698,8 +734,37 @@ footer {
 }
 
 @media (max-width: 620px) {
+    .section-heading {
+        margin-bottom: 2.25rem;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .section-heading h2 {
+        font-size: 2.35rem;
+    }
+
+    .section-heading p:not(.eyebrow) {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .eyebrow {
+        justify-content: center;
+    }
+
     .treatments-grid {
         grid-template-columns: 1fr;
+        gap: 2.75rem;
+    }
+
+    .treatment-card {
+        max-width: 22rem;
+        margin-inline: auto;
+    }
+
+    .treatment-card::before {
+        display: none;
     }
 }
 
@@ -767,10 +832,15 @@ footer {
 @media (max-width: 760px) {
     .benefits .container {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .benefits-grid {
         grid-template-columns: 1fr;
+    }
+
+    .benefit-item {
+        padding: 1.25rem;
     }
 }
 
@@ -849,16 +919,33 @@ footer {
 @media (max-width: 900px) {
     .about-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
 
 @media (max-width: 620px) {
     .about-panel {
-        padding: 1.5rem;
+        padding: 0;
+    }
+
+    .about-panel>p {
+        display: none;
     }
 
     .about-highlights {
         grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .about-highlights div {
+        padding: 1rem;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-card);
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .about-image {
+        border-radius: var(--radius-card);
     }
 }
 
@@ -943,6 +1030,17 @@ footer {
     }
 }
 
+@media (max-width: 620px) {
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .testimonial-text {
+        margin-top: 1.8rem;
+        font-size: 1rem;
+    }
+}
+
 /* =========================
    FAQ
 ========================= */
@@ -1020,6 +1118,18 @@ footer {
 @media (max-width: 900px) {
     .faq-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .faq-item {
+        padding: 1.15rem 1.25rem;
+        border-radius: var(--radius-card);
+    }
+
+    .faq-question {
+        font-size: 1rem;
     }
 }
 
@@ -1115,11 +1225,12 @@ footer {
     transform: translateY(-1px);
 }
 
-.whatsapp-button svg {
+.whatsapp-button img {
     display: block;
     width: 1.5rem;
     height: 1.5rem;
     flex-shrink: 0;
+    filter: brightness(0) invert(1);
 }
 
 .contact-form {
@@ -1240,6 +1351,23 @@ footer {
     color: var(--color-primary-dark);
     font-weight: 700;
     background: rgba(255, 255, 255, 0.65);
+    transition:
+        background var(--transition-base),
+        border-color var(--transition-base),
+        color var(--transition-base),
+        transform var(--transition-base);
+}
+
+.footer-social a:hover {
+    color: #ffffff;
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    transform: translateY(-1px);
+}
+
+.footer-social img {
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 .footer-bottom {
@@ -1288,16 +1416,76 @@ footer {
 }
 
 @media (max-width: 620px) {
+    section {
+        padding: 3.5rem 1rem;
+    }
+
+    .container {
+        width: min(100%, 24rem);
+    }
+
+    .site-header {
+        position: static;
+    }
+
+    .treatments,
+    .benefits,
+    .about,
+    .testimonials,
+    .faq {
+        padding-block: 3.75rem;
+    }
+
+    .contact {
+        padding-block: 3.75rem 4rem;
+    }
+
+    .hero-text,
+    .benefits .section-heading,
+    .about .section-heading,
+    .faq .section-heading,
+    .contact .section-heading {
+        text-align: center;
+    }
+
+    .hero h1,
+    .hero-description,
+    .benefits .section-heading,
+    .about .section-heading,
+    .faq .section-heading,
+    .contact .section-heading {
+        margin-inline: auto;
+    }
+
+    .hero-actions {
+        align-items: stretch;
+    }
+
+    .about-highlights {
+        text-align: center;
+    }
+
     .contact-content {
-        width: min(100% - 1.5rem, var(--container-width));
+        width: min(100%, 24rem);
     }
 
     .contact-form {
-        margin: 1rem;
+        margin: 0;
         padding: 1.25rem;
+        border-radius: 0 0 1.25rem 1.25rem;
     }
 
     .contact-info {
         padding: 1.5rem;
+        border-radius: 1.25rem 1.25rem 0 0;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+    }
+
+    .footer-nav {
+        gap: 0.85rem 1rem;
+        font-size: 0.875rem;
     }
 }
