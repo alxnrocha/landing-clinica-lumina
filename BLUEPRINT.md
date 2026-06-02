@@ -1,296 +1,300 @@
-# Blueprint - Clinica Lumina
+# Blueprint - Clínica Lumina
 
-## 1. Visao Geral
+## 1. Visión General
 
-Clinica Lumina e uma landing page ficticia para uma clinica de medicina estetica moderna localizada em Madrid, Espanha.
+Clínica Lumina es una landing page ficticia para una clínica moderna de medicina estética ubicada en Madrid, España.
 
-O projeto simula uma pagina comercial real, criada para apresentar tratamentos esteticos, transmitir confianca e incentivar o visitante a solicitar uma cita.
+El proyecto simula una página comercial real, creada para presentar tratamientos estéticos, transmitir confianza y facilitar que una persona interesada solicite una primera valoración.
 
-Este e o primeiro projeto da trilha de portfolio frontend, por isso sera desenvolvido com HTML, CSS e JavaScript puro, sem frameworks.
+Es el primer proyecto de la ruta de portfolio frontend. Por ese motivo se desarrolló con HTML, CSS y JavaScript puro, sin frameworks, para reforzar fundamentos antes de avanzar hacia React y TypeScript.
 
-## 2. Objetivo Profissional
+## 2. Objetivo Profesional
 
-O objetivo profissional deste projeto e demonstrar base solida em frontend antes de avancar para React e TypeScript.
+El objetivo profesional del proyecto es demostrar una base sólida de frontend mediante una landing page realista, responsive, accesible y bien documentada.
 
-O projeto deve mostrar:
+El proyecto debe mostrar:
 
-- HTML semantico bem estruturado.
-- CSS responsivo e organizado.
-- JavaScript simples aplicado a interacoes reais.
-- Pensamento comercial orientado a conversao.
-- Acessibilidade basica.
-- SEO tecnico inicial.
-- Organizacao limpa de arquivos.
-- Capacidade de criar uma pagina realista para um negocio local espanhol.
+- HTML semántico bien estructurado.
+- CSS responsive y organizado.
+- JavaScript aplicado a interacciones reales.
+- Pensamiento comercial orientado a conversión.
+- Accesibilidad básica.
+- SEO técnico inicial.
+- Organización clara de archivos.
+- Capacidad para construir una página creíble para un negocio local español.
 
-## 3. Publico-Alvo
+## 3. Público Objetivo
 
-O publico-alvo ficticio da landing page sao pessoas adultas em Madrid interessadas em tratamentos de medicina estetica facial e corporal.
+El público objetivo ficticio de la landing page son personas adultas en Madrid interesadas en tratamientos de medicina estética facial y corporal.
 
-O publico espera:
+El público espera:
 
-- Aparencia profissional e confiavel.
-- Informacoes claras sobre tratamentos.
-- Facilidade para pedir uma cita.
-- Navegacao simples em mobile.
-- Sensacao de seguranca e cuidado.
+- Apariencia profesional y confiable.
+- Información clara sobre tratamientos.
+- Facilidad para pedir una cita o primera valoración.
+- Navegación simple en mobile.
+- Sensación de seguridad, cuidado y criterio profesional.
 
-## 4. Idioma e Tom do Site
+## 4. Idioma y Tono del Sitio
 
-O site sera escrito 100% em espanhol.
+El sitio está escrito en español.
 
-O tom deve ser:
+El tono debe ser:
 
-- Profissional.
+- Profesional.
 - Claro.
-- Acolhedor.
+- Cercano.
 - Moderno.
-- Sem exageros comerciais.
+- Sin exageraciones comerciales.
 
-Exemplo de tom:
+Ejemplo de tono:
 
-> Medicina estetica avanzada con un enfoque natural, seguro y personalizado.
+> Medicina estética avanzada con un enfoque natural, seguro y personalizado.
 
-## 5. Stack do Projeto
+## 5. Stack del Proyecto
 
 ### Stack principal
 
-- HTML5
-- CSS3
-- JavaScript
+- HTML5.
+- CSS3.
+- JavaScript.
 
-### Ferramentas de desenvolvimento
+### Herramientas de desarrollo
 
-- Git
-- GitHub
-- Navegador moderno
-- Vercel ou Netlify para deploy futuro
+- Git.
+- GitHub.
+- Navegador moderno.
+- GitHub Pages para deploy.
 
-### Fora do escopo deste projeto
+### Fuera del alcance de este proyecto
 
-- React
-- TypeScript
-- Tailwind CSS
-- Backend
-- Banco de dados
-- Autenticacao
-- CMS
-- Docker
+- React.
+- TypeScript.
+- Tailwind CSS.
+- Backend.
+- Base de datos.
+- Autenticación.
+- CMS.
+- Docker.
 
-## 6. Referencias Tecnicas
+## 6. Referencias Técnicas
 
-Este blueprint considera boas praticas baseadas em:
+Este blueprint considera buenas prácticas basadas en:
 
-- MDN Web Docs para HTML, CSS e JavaScript.
-- W3C WCAG 2.2 para acessibilidade.
-- Google Search Central para SEO basico.
-- Documentacao oficial do Git e GitHub para organizacao do fluxo de trabalho.
+- MDN Web Docs para HTML, CSS y JavaScript.
+- W3C WCAG 2.2 para accesibilidad.
+- Google Search Central para SEO básico.
+- Documentación oficial de Git y GitHub para organización del flujo de trabajo.
 
-## 7. Escopo Incluido
+## 7. Alcance Incluido
 
-O projeto deve incluir as seguintes secoes:
+El proyecto incluye las siguientes secciones:
 
-1. Header com navegacao.
-2. Hero section com proposta de valor e CTA.
-3. Secao de tratamentos.
-4. Secao de beneficios ou diferenciais.
-5. Secao "Sobre la clinica".
-6. Secao de depoimentos.
-7. Secao de perguntas frequentes.
-8. Secao de contato com formulario visual.
-9. Footer profissional.
-10. Botao fixo de WhatsApp.
+1. Header con navegación.
+2. Hero section con propuesta de valor y CTA.
+3. Sección de tratamientos.
+4. Sección de beneficios o diferenciales.
+5. Sección "La clínica".
+6. Sección de testimonios.
+7. Sección de preguntas frecuentes.
+8. Sección de contacto con formulario visual.
+9. Footer profesional.
+10. Iconografía social visual no conectada a redes reales.
 
-## 8. Escopo Excluido
+## 8. Alcance Excluido
 
-Este projeto nao tera:
+Este proyecto no incluye:
 
-- Envio real de formulario.
-- Integracao real com WhatsApp Business API.
-- Sistema de agendamento real.
-- Area administrativa.
-- Banco de dados.
+- Envío real del formulario.
+- Integración real con WhatsApp Business API.
+- Sistema de reservas real.
+- Área administrativa.
+- Base de datos.
 - Login.
-- Paginas internas complexas.
-- Animacoes pesadas.
+- Páginas internas complejas.
+- Animaciones pesadas.
 
-O botao de WhatsApp pode abrir um link simulado ou real configuravel.
+El formulario es visual y valida campos en frontend, pero no envía datos a un servidor.
 
-O formulario sera visual e podera validar campos no frontend, mas nao enviara dados para um servidor.
+Los enlaces sociales, legales y de WhatsApp se mantienen como elementos visuales de una clínica ficticia, sin apuntar a perfiles o servicios reales.
 
 ## 9. Funcionalidades
 
-### Navegacao
+### Navegación
 
-- Menu com links para secoes da mesma pagina.
-- Scroll suave ao clicar nos links.
-- Menu adaptado para telas pequenas.
+- Menú con enlaces a secciones de la misma página.
+- Scroll suave al hacer clic en enlaces internos.
+- Menú adaptado para pantallas pequeñas.
+- Cierre del menú mobile al seleccionar una sección.
 
 ### Hero
 
-- Titulo principal claro.
-- Texto de apoio.
+- Título principal claro.
+- Texto de apoyo.
 - CTA principal para pedir cita.
-- CTA secundario para conhecer tratamentos.
-- Elemento visual relacionado a clinica.
+- CTA secundario para conocer tratamientos.
+- Imagen principal relacionada con la clínica.
+- Tarjeta informativa destacada.
 
-### Tratamentos
+### Tratamientos
 
-Lista de tratamentos ficticios, por exemplo:
+Tratamientos ficticios incluidos:
 
 - Rejuvenecimiento facial.
+- Ácido hialurónico.
 - Limpieza facial avanzada.
-- Botox y acido hialuronico.
 - Tratamientos corporales.
-- Diagnostico estetico personalizado.
 
 ### Beneficios
 
-Diferenciais da clinica:
+Diferenciales de la clínica:
 
-- Equipo medico especializado.
-- Tratamientos personalizados.
+- Diagnóstico personalizado.
 - Resultados naturales.
-- Primera valoracion informativa.
-- Tecnologia estetica avanzada.
+- Acompañamiento profesional.
+- Espacio moderno y cuidado.
 
-### Sobre a Clinica
+### La Clínica
 
-Pequena apresentacao institucional da Clinica Lumina, com foco em confianca, cuidado e abordagem personalizada.
+Presentación institucional breve de Clínica Lumina, con foco en confianza, cuidado, tecnología y atención personalizada.
 
-### Depoimentos
+### Testimonios
 
-Depoimentos ficticios curtos de clientes.
+Testimonios ficticios cortos de pacientes.
 
-Os depoimentos devem parecer realistas, sem promessas exageradas.
+Los testimonios deben parecer realistas, sin promesas exageradas ni afirmaciones médicas irresponsables.
 
 ### FAQ
 
-Perguntas frequentes sobre:
+Preguntas frecuentes sobre:
 
-- Primeira cita.
-- Duracao dos tratamentos.
-- Cuidados posteriores.
+- Primera valoración.
 - Resultados esperados.
-- Forma de contato.
+- Información antes de reservar.
+- Cuidados posteriores.
+- Ubicación ficticia de la clínica.
 
-### Contato
+### Contacto
 
-- Formulario visual com nome, telefone, email e mensagem.
-- Informacao de localizacao ficticia em Madrid.
-- Horario de atendimento.
-- CTA para WhatsApp.
+- Formulario visual con nombre, email, teléfono, tratamiento de interés y mensaje.
+- Información de ubicación ficticia en Madrid.
+- Horario de atención.
+- Elemento visual de WhatsApp sin conexión real.
 
 ## 10. Requisitos de UX
 
-A landing page deve:
+La landing page debe:
 
-- Ser clara em menos de 5 segundos.
-- Ter CTA visivel no primeiro bloco.
-- Funcionar bem em mobile.
-- Evitar excesso de texto.
-- Usar hierarquia visual clara.
-- Separar bem as secoes.
-- Facilitar o contato.
-- Transmitir confianca.
+- Ser clara en menos de 5 segundos.
+- Tener CTA visible en el primer bloque.
+- Funcionar bien en mobile.
+- Evitar exceso de texto.
+- Usar jerarquía visual clara.
+- Separar bien las secciones.
+- Facilitar el contacto.
+- Transmitir confianza.
 
 ## 11. Requisitos de UI
 
-A interface deve seguir uma estetica de clinica moderna:
+La interfaz debe seguir una estética de clínica moderna:
 
-- Visual limpo.
-- Espacos bem definidos.
-- Cores suaves e profissionais.
-- Tipografia legivel.
-- Botoes claros.
-- Cards simples para tratamentos e depoimentos.
-- Layout mobile-first.
+- Visual limpio.
+- Espacios bien definidos.
+- Colores suaves y profesionales.
+- Tipografía legible.
+- Botones claros.
+- Cards simples para tratamientos, beneficios y testimonios.
+- Layout responsive.
 
-Direcao visual sugerida:
+Dirección visual:
 
-- Fundo claro.
-- Cor principal associada a saude, cuidado ou tecnologia.
-- Cor de destaque para CTAs.
-- Evitar visual excessivamente luxuoso ou artificial.
+- Fondo claro.
+- Verde oscuro como color principal.
+- Tonos cálidos y suaves para secciones de apoyo.
+- Contraste suficiente en CTAs y textos importantes.
+- Evitar un aspecto excesivamente lujoso, artificial o sobrecargado.
 
-## 12. Responsividade
+## 12. Responsividad
 
-O projeto deve funcionar bem em:
+El proyecto debe funcionar bien en:
 
-- Mobile pequeno.
+- Mobile pequeño.
 - Mobile grande.
 - Tablet.
 - Desktop.
 
-Prioridade:
+Prioridad:
 
 1. Mobile.
 2. Desktop.
 3. Tablet.
 
-O layout deve evitar:
+El layout debe evitar:
 
 - Texto cortado.
-- Cards quebrados.
-- Botoes pequenos demais.
-- Espacamentos inconsistentes.
-- Menu dificil de usar no celular.
+- Cards rotas.
+- Botones demasiado pequeños.
+- Espaciados inconsistentes.
+- Menú difícil de usar en celular.
+- Overflow horizontal.
 
-## 13. Acessibilidade
+## 13. Accesibilidad
 
-Requisitos minimos:
+Requisitos mínimos:
 
-- Uso correto de tags semanticas.
-- Apenas um `h1` na pagina.
-- Hierarquia correta de titulos.
-- Textos alternativos em imagens.
-- Labels nos campos de formulario.
-- Contraste adequado.
-- Foco visivel em links e botoes.
-- Botoes com texto claro.
-- Navegacao possivel via teclado.
+- Uso correcto de etiquetas semánticas.
+- Un solo `h1` en la página.
+- Jerarquía correcta de títulos.
+- Textos alternativos en imágenes.
+- Labels en campos de formulario.
+- Contraste adecuado.
+- Foco visible en links, botones y campos.
+- Botones con texto claro.
+- Navegación posible mediante teclado.
+- Uso de `aria-expanded`, `aria-controls`, `aria-describedby`, `aria-invalid` y `aria-live` cuando corresponde.
 
-## 14. SEO Basico
+## 14. SEO Básico
 
-O projeto deve incluir:
+El proyecto incluye:
 
-- `title` descritivo.
+- `title` descriptivo.
 - `meta description`.
-- HTML semantico.
+- HTML semántico.
 - Headings organizados.
-- Conteudo em espanhol.
-- Nome da clinica e localizacao ficticia.
-- Imagens otimizadas quando forem adicionadas.
+- Contenido en español.
+- Nombre de la clínica y ubicación ficticia.
+- Imágenes optimizadas en formato WebP.
 
-Exemplo de titulo:
-
-```txt
-Clinica Lumina | Medicina estetica en Madrid
-```
-
-Exemplo de meta description:
+Ejemplo de título:
 
 ```txt
-Clinica de medicina estetica en Madrid especializada en tratamientos faciales y corporales con enfoque natural, seguro y personalizado.
+Clínica Lumina | Medicina estética en Madrid
 ```
 
-## 15. JavaScript Previsto
+Ejemplo de meta description:
 
-O JavaScript deve ser simples e justificado.
+```txt
+Clínica de medicina estética en Madrid especializada en tratamientos faciales y corporales con enfoque natural, seguro y personalizado.
+```
 
-Possiveis usos:
+## 15. JavaScript
 
-- Abrir e fechar menu mobile.
-- Scroll suave ou comportamento ativo de navegacao.
-- Abrir e fechar perguntas do FAQ.
-- Validacao simples do formulario.
-- Atualizar mensagem visual de envio simulado.
+El JavaScript debe ser simple, justificado y fácil de leer.
 
-Nao devemos criar JavaScript desnecessario.
+Usos principales:
 
-## 16. Estrutura de Arquivos Prevista
+- Abrir y cerrar el menú mobile.
+- Mantener sincronizados estados visuales y atributos ARIA.
+- Abrir y cerrar preguntas del FAQ.
+- Validar el formulario en frontend.
+- Mostrar errores por campo.
+- Mostrar mensaje visual de envío simulado.
 
-Estrutura inicial recomendada:
+No se debe añadir JavaScript innecesario.
+
+## 16. Estructura de Archivos
+
+Estructura del proyecto:
 
 ```txt
 01-landing-clinica-lumina/
@@ -299,20 +303,21 @@ Estrutura inicial recomendada:
   DECISIONS.md
   index.html
   src/
+    assets/
+      icons/
+      images/
     css/
       styles.css
     js/
       main.js
-    assets/
-      images/
   screenshots/
+    desktop.png
+    mobile.png
 ```
 
-Observacao: esta estrutura pode ser ajustada antes da implementacao.
+## 17. Estructura Semántica
 
-## 17. Estrutura Semantica Prevista
-
-Estrutura base do HTML:
+Estructura base del HTML:
 
 ```txt
 header
@@ -320,55 +325,56 @@ main
   section hero
   section tratamientos
   section beneficios
-  section sobre la clinica
+  section la clínica
   section testimonios
   section faq
   section contacto
 footer
 ```
 
-Cada secao deve ter uma responsabilidade clara.
+Cada sección debe tener una responsabilidad clara.
 
-## 18. Estados da Interface
+## 18. Estados de la Interfaz
 
-Mesmo sendo uma landing page simples, devemos prever estados:
+Estados previstos:
 
-- Menu mobile aberto.
-- Menu mobile fechado.
-- FAQ aberto.
-- FAQ fechado.
-- Formulario vazio.
-- Formulario com erro.
-- Formulario com envio simulado bem-sucedido.
-- Hover/focus em links e botoes.
+- Menú mobile abierto.
+- Menú mobile cerrado.
+- FAQ abierta.
+- FAQ cerrada.
+- Formulario vacío.
+- Formulario con error.
+- Formulario con envío simulado exitoso.
+- Hover y focus en links, botones y campos.
 
-## 19. Criterios de Qualidade
+## 19. Criterios de Calidad
 
-O projeto so deve ser considerado pronto quando:
+El proyecto se considera listo cuando:
 
-- A pagina estiver responsiva.
-- O HTML estiver semantico.
-- O CSS estiver organizado.
-- O JavaScript tiver objetivo claro.
-- O formulario tiver labels e validacao basica.
-- O menu funcionar em mobile.
-- O FAQ funcionar.
-- O README estiver claro.
-- O DECISIONS.md explicar escolhas tecnicas.
-- O projeto tiver screenshots.
-- O deploy estiver publicado.
+- La página es responsive.
+- El HTML es semántico.
+- El CSS está organizado por secciones.
+- El JavaScript tiene un objetivo claro.
+- El formulario tiene labels y validación básica.
+- El menú funciona en mobile.
+- El FAQ funciona.
+- El README está claro.
+- DECISIONS.md explica las decisiones técnicas.
+- El proyecto incluye screenshots.
+- El deploy está publicado.
+- El repositorio tiene issues, PRs y commits organizados.
 
 ## 20. Estrategia de GitHub
 
-O repositorio sera separado dos outros projetos.
+El repositorio está separado de los demás proyectos del portfolio.
 
-Padroes:
+Patrones:
 
-- Issues em ingles.
-- Pull requests em espanhol.
-- Commits em ingles.
-- Site em espanhol.
-- README preferencialmente em espanhol.
+- Issues en inglés.
+- Pull requests en español.
+- Commits en inglés.
+- Sitio en español.
+- README, DECISIONS y BLUEPRINT en español.
 
 Branch principal:
 
@@ -376,22 +382,21 @@ Branch principal:
 main
 ```
 
-Padrao de branches:
+Ejemplos de ramas:
 
 ```txt
-feature/project-setup
-feature/base-layout
-feature/responsive-header
 feature/hero-section
 feature/treatments-section
 feature/contact-form
 feature/faq-interaction
-docs/readme
+fix/mobile-responsive-polish
+docs/project-documentation
+docs/project-screenshots
 ```
 
 ## 21. Labels Recomendadas
 
-Labels iniciais para GitHub:
+Labels de GitHub:
 
 - `type: feature`
 - `type: docs`
@@ -404,66 +409,71 @@ Labels iniciais para GitHub:
 - `area: accessibility`
 - `area: responsive`
 - `area: seo`
+- `area: documentation`
+- `area: project-setup`
 - `priority: high`
 - `priority: medium`
 - `priority: low`
 
-## 22. Milestones Previstas
+## 22. Milestones
 
 ### Milestone 1 - Project foundation
 
-Criar estrutura base, documentacao inicial e configuracao do projeto.
+Crear estructura base, documentación inicial y configuración del proyecto.
 
 ### Milestone 2 - Static landing page
 
-Construir a versao estatica completa da landing page.
+Construir la versión estática completa de la landing page.
 
 ### Milestone 3 - Interactions and polish
 
-Adicionar JavaScript, responsividade final, acessibilidade e refinamento visual.
+Añadir JavaScript, ajustes responsive, accesibilidad y refinamiento visual.
 
 ### Milestone 4 - Documentation and deploy
 
-Finalizar README, DECISIONS.md, screenshots e deploy.
+Finalizar README, DECISIONS.md, screenshots, deploy y presentación final del repositorio.
 
-## 23. Riscos Tecnicos
+## 23. Riesgos Técnicos
 
-Riscos principais:
+Riesgos principales:
 
-- Criar uma pagina bonita, mas com HTML pouco semantico.
-- Usar CSS desorganizado demais.
-- Fazer menu mobile inacessivel.
-- Criar formulario sem labels.
+- Crear una página bonita, pero con HTML poco semántico.
+- Usar CSS demasiado desorganizado.
+- Hacer un menú mobile inaccesible.
+- Crear un formulario sin labels.
 - Usar contraste insuficiente.
-- Criar textos comerciais exagerados.
-- Nao documentar decisoes tecnicas.
+- Crear textos comerciales exagerados.
+- No documentar decisiones técnicas.
+- Dejar enlaces ficticios como si fueran enlaces reales.
 
-Como controlar:
+Cómo controlar los riesgos:
 
-- Implementar por pequenas issues.
-- Revisar cada secao antes de avancar.
-- Testar mobile desde o inicio.
-- Manter CSS organizado por secoes.
-- Documentar decisoes no DECISIONS.md.
+- Implementar por pequeñas issues.
+- Revisar cada sección antes de avanzar.
+- Testear mobile desde el inicio.
+- Mantener CSS organizado por secciones.
+- Documentar decisiones en DECISIONS.md.
+- Cerrar el proyecto con una revisión final de presentación.
 
-## 24. Ordem Recomendada de Execucao
+## 24. Orden Recomendada de Ejecución
 
-1. Criar estrutura base do projeto.
-2. Criar documentacao inicial.
-3. Criar HTML sem estilos finais.
-4. Criar CSS base e variaveis.
-5. Construir header e hero.
-6. Construir secoes comerciais.
-7. Criar formulario e FAQ.
-8. Adicionar JavaScript.
-9. Revisar responsividade.
-10. Revisar acessibilidade.
-11. Criar README e DECISIONS.md.
-12. Adicionar screenshots.
-13. Fazer deploy.
+1. Crear estructura base del proyecto.
+2. Crear documentación inicial.
+3. Crear HTML sin estilos finales.
+4. Crear CSS base y variables.
+5. Construir header y hero.
+6. Construir secciones comerciales.
+7. Crear formulario y FAQ.
+8. Añadir JavaScript.
+9. Revisar responsividad.
+10. Revisar accesibilidad.
+11. Crear README y DECISIONS.md.
+12. Añadir screenshots.
+13. Publicar deploy.
+14. Revisar la presentación final del repositorio.
 
-## 25. Definicao de Pronto
+## 25. Definición de Listo
 
-O projeto estara pronto quando puder ser apresentado para um recrutador como uma landing page comercial simples, realista, responsiva, acessivel e bem documentada.
+El proyecto está listo cuando puede presentarse a un reclutador como una landing page comercial simple, realista, responsive, accesible y bien documentada.
 
-Ele nao precisa parecer um produto complexo. Precisa parecer um primeiro projeto bem feito, com fundamentos solidos e processo profissional.
+No necesita parecer un producto complejo. Debe parecer un primer proyecto bien hecho, con fundamentos sólidos, proceso profesional y una presentación coherente para portfolio.
