@@ -42,7 +42,7 @@ Las interacciones principales están implementadas con JavaScript:
 - FAQ accordion;
 - validación visual del formulario;
 - prevención del envío real del formulario;
-- mensaje de confirmación simulado.
+- mensaje de validación para el formulario de demostración.
 
 El formulario no envía datos reales ni está conectado a un backend.
 
@@ -53,10 +53,15 @@ Implementé varias mejoras básicas de accesibilidad:
 - navegación principal con `aria-label`;
 - botón de menú con `aria-expanded` y `aria-controls`;
 - FAQ construido con botones reales;
+- relación entre preguntas y respuestas mediante `aria-controls`;
 - errores de formulario conectados con `aria-describedby`;
 - estado inválido con `aria-invalid`;
 - mensaje de éxito con `aria-live`;
 - estados de foco visibles para teclado.
+
+Las imágenes incluyen dimensiones explícitas. El hero tiene carga prioritaria y
+las imágenes secundarias utilizan lazy loading para reducir saltos de layout y
+trabajo innecesario durante la carga inicial.
 
 ## Estructura
 
@@ -69,6 +74,7 @@ Implementé varias mejoras básicas de accesibilidad:
 ├── screenshots/
 └── src/
     ├── assets/
+    │   ├── icons/
     │   └── images/
     ├── css/
     │   └── styles.css
@@ -92,11 +98,11 @@ También puede abrirse directamente el archivo `index.html` en el navegador.
 
 ### Desktop
 
-![Vista desktop de Clínica Lumina](./screenshots/desktop.png)
+![Vista desktop de Clínica Lumina](./screenshots/desktop.png?v=20260609-2)
 
 ### Mobile
 
-![Vista mobile de Clínica Lumina](./screenshots/mobile.png)
+![Vista mobile de Clínica Lumina](./screenshots/mobile.png?v=20260609-2)
 
 ## Deploy
 

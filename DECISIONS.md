@@ -114,6 +114,7 @@ Esta decisión permite que la interacción sea accesible por teclado y más clar
 El comportamiento se controla con:
 
 - `aria-expanded`;
+- `aria-controls`;
 - clase `is-open`;
 - JavaScript para abrir una pregunta y cerrar las demás.
 
@@ -131,7 +132,8 @@ La lógica del formulario:
 4. valida campos obligatorios;
 5. valida el formato del email usando la validación nativa del input;
 6. muestra errores visuales;
-7. muestra un mensaje de éxito simulado si todo es válido.
+7. mueve el foco al primer campo inválido cuando es necesario;
+8. muestra una confirmación de validación sin simular un envío real.
 
 Campos obligatorios:
 
@@ -169,6 +171,10 @@ Incluí una base mínima de SEO:
 - `meta description`;
 - jerarquía clara de headings;
 - contenido orientado a una clínica local en Madrid.
+
+Las imágenes incluyen dimensiones explícitas para reducir cambios de layout. La
+imagen principal se carga con prioridad y las imágenes secundarias utilizan
+lazy loading.
 
 No añadí datos estructurados ni SEO avanzado porque el objetivo actual es una landing page estática de portfolio.
 
