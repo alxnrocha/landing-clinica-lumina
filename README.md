@@ -98,11 +98,11 @@ También puede abrirse directamente el archivo `index.html` en el navegador.
 
 ### Desktop
 
-![Vista desktop de Clínica Lumina](./screenshots/desktop.png?v=20260702-1)
+![Vista desktop de Clínica Lumina](./screenshots/desktop.png?v=20260702-full)
 
 ### Mobile
 
-![Vista mobile de Clínica Lumina](./screenshots/mobile.png?v=20260702-1)
+![Vista mobile de Clínica Lumina](./screenshots/mobile.png?v=20260702-full)
 
 ## Deploy
 
