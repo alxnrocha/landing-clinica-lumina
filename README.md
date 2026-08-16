@@ -13,18 +13,6 @@
 
 ---
 
-## 📸 Vistas Reales del Sistema
-
-### 1. Vista Principal (Desktop)
-
-![Vista desktop de Clínica Lumina](./screenshots/desktop.png)
-
-### 2. Experiencia Responsive (Móvil)
-
-![Vista mobile de Clínica Lumina](./screenshots/mobile.png)
-
----
-
 ## ✨ Características Principales
 
 ### 🚀 Experiencia de Usuario & Frontend
