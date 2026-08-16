@@ -71,6 +71,14 @@ Al ser un proyecto desarrollado en Vanilla JavaScript, no requiere instalación 
 
 ---
 
+## 🧪 Calidad de Código y Pruebas
+
+- **Estándares Web:** Marcado HTML5 semántico y CSS3 puro validado contra las directrices oficiales del W3C.
+- **Accesibilidad (a11y):** Cumplimiento de pautas WCAG 2.1 nivel AA (contraste cromático, navegación integral por teclado y atributos ARIA).
+- **Rendimiento:** Carga diferida de imágenes secundarias (*lazy loading*) y prioridad en recurso LCP.
+
+---
+
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulte el archivo [LICENSE](./LICENSE) para más detalles.
