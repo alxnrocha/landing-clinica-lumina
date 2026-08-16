@@ -29,9 +29,6 @@
 ```text
 01-landing-clinica-lumina/
 ├── index.html                     # Documento HTML5 principal
-├── screenshots/                   # Capturas de pantalla reales
-│   ├── desktop.png
-│   └── mobile.png
 ├── src/
 │   ├── assets/                    # Iconos y recursos visuales optimizados
 │   ├── css/
