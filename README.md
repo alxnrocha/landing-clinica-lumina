@@ -1,125 +1,78 @@
-# Clínica Lumina
+# Clínica Lumina — Landing Page de Medicina Estética
 
-Landing page comercial para una clínica ficticia de medicina estética en Madrid.
+[![Demo GitHub Pages](https://img.shields.io/badge/Demo-GitHub_Pages-22c55e?style=for-the-badge&logo=github&logoColor=white)](https://alxnrocha.github.io/landing-clinica-lumina/)
+[![HTML5](https://img.shields.io/badge/HTML5-Semántico-e34f26.svg?logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-Custom_Properties-1572b6.svg?logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla_ES6+-f7df1e.svg?logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
-Diseñé y desarrollé este proyecto para simular una página real de captación de citas para un negocio local. El objetivo fue construir una experiencia clara, responsive y orientada a conversión, cuidando tanto la presentación visual como la estructura técnica del frontend.
+**Clínica Lumina** es una landing page comercial responsiva diseñada para una clínica de medicina estética de alta gama en Madrid. El proyecto está enfocado en la conversión de clientes, accesibilidad web (WCAG) y optimización extrema de carga sin dependencias externas.
 
-## Vista General
+- 🌐 **Demo en Vivo (GitHub Pages):** [https://alxnrocha.github.io/landing-clinica-lumina/](https://alxnrocha.github.io/landing-clinica-lumina/)
+- 📦 **Repositorio GitHub:** [https://github.com/alxnrocha/landing-clinica-lumina](https://github.com/alxnrocha/landing-clinica-lumina)
 
-Clínica Lumina presenta servicios estéticos, beneficios, testimonios, preguntas frecuentes y un formulario visual de contacto. La página está pensada para transmitir confianza, explicar la propuesta de valor y facilitar que una persona interesada solicite una primera valoración.
+---
 
-## Funcionalidades
+## 📸 Vistas Reales del Sistema
 
-- Hero principal con propuesta de valor y llamadas a la acción.
-- Navegación responsive con menú móvil.
-- Sección de tratamientos con tarjetas informativas.
-- Sección de beneficios orientada a confianza y conversión.
-- Bloque sobre la clínica con información comercial.
-- Testimonios de pacientes.
-- FAQ interactivo tipo accordion.
-- Sección de contacto con ubicación, horario y WhatsApp.
-- Formulario visual con validación frontend.
-- Mensajes de error y éxito en el formulario.
-- Diseño responsive para desktop, tablet y móvil.
-- Metadatos básicos para SEO.
+### 1. Vista Principal (Desktop)
 
-## Tecnologías
+![Vista desktop de Clínica Lumina](./screenshots/desktop.png)
 
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- GitHub
+### 2. Experiencia Responsive (Móvil)
 
-## Decisiones de Implementación
+![Vista mobile de Clínica Lumina](./screenshots/mobile.png)
 
-El proyecto está construido con HTML, CSS y JavaScript sin dependencias externas. Elegí una stack ligera porque la página no necesita rutas, estado global ni framework de componentes. Esto permite que el código sea fácil de revisar, rápido de cargar y adecuado para una landing page estática.
+---
 
-Las interacciones principales están implementadas con JavaScript:
+## ✨ Características Principales
 
-- apertura y cierre del menú móvil;
-- actualización de `aria-expanded` en elementos interactivos;
-- FAQ accordion;
-- validación visual del formulario;
-- prevención del envío real del formulario;
-- mensaje de validación para el formulario de demostración.
+### 🚀 Experiencia de Usuario & Frontend
+- **Estructura Semántica & Accesibilidad:** Navegación optimizada con etiquetas semánticas HTML5, atributos `aria-expanded`, `aria-controls` y navegación accesible por teclado.
+- **Acordeón Interactivo de FAQ:** Módulo expandible accesible sin librerías pesadas para resolver dudas frecuentes de pacientes.
+- **Formulario de Valoración con Validación:** Validación frontend en tiempo real de campos obligatorios con retroalimentación visual (`aria-invalid` y `aria-live`).
+- **Rendimiento de Carga y Core Web Vitals:** Carga prioritaria del recurso LCP en el Hero y *lazy loading* nativo en imágenes secundarias para evitar saltos de layout (CLS).
+- **Diseño Responsive:** Adaptación fluida para dispositivos móviles, tablets y pantallas de escritorio mediante CSS Flexbox y Grid.
 
-El formulario no envía datos reales ni está conectado a un backend.
+---
 
-## Accesibilidad
+## 🏛️ Estructura del Proyecto
 
-Implementé varias mejoras básicas de accesibilidad:
-
-- navegación principal con `aria-label`;
-- botón de menú con `aria-expanded` y `aria-controls`;
-- FAQ construido con botones reales;
-- relación entre preguntas y respuestas mediante `aria-controls`;
-- errores de formulario conectados con `aria-describedby`;
-- estado inválido con `aria-invalid`;
-- mensaje de éxito con `aria-live`;
-- estados de foco visibles para teclado.
-
-Las imágenes incluyen dimensiones explícitas. El hero tiene carga prioritaria y
-las imágenes secundarias utilizan lazy loading para reducir saltos de layout y
-trabajo innecesario durante la carga inicial.
-
-## Estructura
-
-```txt
+```text
 01-landing-clinica-lumina/
-├── BLUEPRINT.md
-├── DECISIONS.md
-├── README.md
-├── index.html
-├── screenshots/
-└── src/
-    ├── assets/
-    │   ├── icons/
-    │   └── images/
-    ├── css/
-    │   └── styles.css
-    └── js/
-        └── main.js
+├── index.html                     # Documento HTML5 principal
+├── screenshots/                   # Capturas de pantalla reales
+│   ├── desktop.png
+│   └── mobile.png
+├── src/
+│   ├── assets/                    # Iconos y recursos visuales optimizados
+│   ├── css/
+│   │   └── styles.css             # Arquitectura CSS y variables de diseño (:root)
+│   └── js/
+│       └── main.js                # Interacciones DOM y validación de formularios
+├── BLUEPRINT.md                   # Registro de especificaciones
+└── DECISIONS.md                   # Registro de decisiones de arquitectura (ADRs)
 ```
 
-## Cómo Ejecutarlo
+---
 
-No requiere instalación de dependencias.
+## ⚡ Guía de Inicio Rápido
 
-Opción recomendada:
+### 1. Clonar el Repositorio
+```bash
+git clone https://github.com/alxnrocha/landing-clinica-lumina.git
+cd landing-clinica-lumina
+```
 
-1. Clonar el repositorio.
-2. Abrir la carpeta del proyecto en Visual Studio Code.
-3. Ejecutar `index.html` con Live Server.
+### 2. Ejecutar en Local
+Al ser un proyecto desarrollado en Vanilla JavaScript, no requiere instalación de dependencias de Node.js:
+- Abra `index.html` directamente en su navegador web, o
+- Inicie un servidor local liviano con la extensión **Live Server** de VS Code o ejecutando `npx serve .`.
 
-También puede abrirse directamente el archivo `index.html` en el navegador.
+---
 
-## Screenshots
+## 📄 Licencia
 
-### Desktop
+Este proyecto está bajo la Licencia MIT. Consulte el archivo [LICENSE](./LICENSE) para más detalles.
 
-![Vista desktop de Clínica Lumina](./screenshots/desktop.png?v=20260702-fixed)
-
-### Mobile
-
-![Vista mobile de Clínica Lumina](./screenshots/mobile.png?v=20260702-fixed)
-
-## Deploy
-
-Proyecto publicado con GitHub Pages:
-
-[https://alxnrocha.github.io/landing-clinica-lumina/](https://alxnrocha.github.io/landing-clinica-lumina/)
-
-## Documentación Técnica
-
-Las decisiones técnicas principales están documentadas en:
-
-[DECISIONS.md](./DECISIONS.md)
-
-## Estado
-
-Landing page finalizada y publicada como proyecto de portfolio frontend.
-
-## Autor
-
-Alexandre Rocha
+**Autor:** [Alexandre Rocha](https://github.com/alxnrocha)
