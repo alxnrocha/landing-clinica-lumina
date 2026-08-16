@@ -38,8 +38,6 @@
 │   │   └── styles.css             # Arquitectura CSS y variables de diseño (:root)
 │   └── js/
 │       └── main.js                # Interacciones DOM y validación de formularios
-├── BLUEPRINT.md                   # Registro de especificaciones
-└── DECISIONS.md                   # Registro de decisiones de arquitectura (ADRs)
 ```
 
 ---
