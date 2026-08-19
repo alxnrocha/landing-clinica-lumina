@@ -1,15 +1,14 @@
 # Clínica Lumina — Landing Page de Medicina Estética
 
-[![Demo GitHub Pages](https://img.shields.io/badge/Demo-GitHub_Pages-22c55e?style=for-the-badge&logo=github&logoColor=white)](https://alxnrocha.github.io/landing-clinica-lumina/)
-[![HTML5](https://img.shields.io/badge/HTML5-Semántico-e34f26.svg?logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-Custom_Properties-1572b6.svg?logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla_ES6+-f7df1e.svg?logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-success?style=flat-square&logo=github&logoColor=white)](https://alxnrocha.github.io/landing-clinica-lumina/)
+[![HTML5](https://img.shields.io/badge/HTML5-Semantic_Markup-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-Modern_Responsive-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla_ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[![Accessibility](https://img.shields.io/badge/Accessibility-WCAG_2.1_AA-8A2BE2?style=flat-square)](https://www.w3.org/WAI/standards-guidelines/wcag/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
-**Clínica Lumina** es una landing page comercial responsiva diseñada para una clínica de medicina estética de alta gama en Madrid. El proyecto está enfocado en la conversión de clientes, accesibilidad web (WCAG) y optimización extrema de carga sin dependencias externas.
-
-- 🌐 **Demo en Vivo (GitHub Pages):** [https://alxnrocha.github.io/landing-clinica-lumina/](https://alxnrocha.github.io/landing-clinica-lumina/)
-- 📦 **Repositorio GitHub:** [https://github.com/alxnrocha/landing-clinica-lumina](https://github.com/alxnrocha/landing-clinica-lumina)
+> **Proyecto 01 del Portafolio Profesional** — Landing page comercial responsiva para clínica de medicina estética de alta gama en Madrid, orientada a la conversión y accesibilidad web.  
+> 🔗 **Demo en Vivo en GitHub Pages:** [https://alxnrocha.github.io/landing-clinica-lumina/](https://alxnrocha.github.io/landing-clinica-lumina/)
 
 ---
 
@@ -65,5 +64,3 @@ Al ser un proyecto desarrollado en Vanilla JavaScript, no requiere instalación 
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulte el archivo [LICENSE](./LICENSE) para más detalles.
-
-**Autor:** [Alexandre Rocha](https://github.com/alxnrocha)
