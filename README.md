@@ -12,55 +12,69 @@
 
 ---
 
-## ✨ Características Principales
+## 🌟 Visión General & Propuesta de Valor
 
-### 🚀 Experiencia de Usuario & Frontend
-- **Estructura Semántica & Accesibilidad:** Navegación optimizada con etiquetas semánticas HTML5, atributos `aria-expanded`, `aria-controls` y navegación accesible por teclado.
-- **Acordeón Interactivo de FAQ:** Módulo expandible accesible sin librerías pesadas para resolver dudas frecuentes de pacientes.
-- **Formulario de Valoración con Validación:** Validación frontend en tiempo real de campos obligatorios con retroalimentación visual (`aria-invalid` y `aria-live`).
-- **Rendimiento de Carga y Core Web Vitals:** Carga prioritaria del recurso LCP en el Hero y *lazy loading* nativo en imágenes secundarias para evitar saltos de layout (CLS).
-- **Diseño Responsive:** Adaptación fluida para dispositivos móviles, tablets y pantallas de escritorio mediante CSS Flexbox y Grid.
+**Clínica Lumina** es una solución web comercial y corporativa diseñada para captar y convertir pacientes de tratamientos estéticos no invasivos en Madrid. 
+
+Prioriza una experiencia de usuario rápida y sin fricción, eliminando librerías pesadas en favor de estándares nativos HTML5 y CSS3 modernos, con cumplimiento riguroso de accesibilidad (WCAG 2.1 AA) y tiempos de carga instantáneos.
 
 ---
 
-## 🏛️ Estructura del Proyecto
+## ✨ Características Principales
+
+- **Estructura Semántica & Accesibilidad:** Navegación optimizada con marcado semántico HTML5, atributos `aria-expanded`, `aria-controls` y navegación accesible por teclado.
+- **Acordeón Interactivo de FAQ:** Módulo expandible nativo para resolver dudas frecuentes de pacientes sin dependencias externas.
+- **Formulario de Valoración con Validación:** Validación frontend en tiempo real de campos obligatorios con retroalimentación visual (`aria-invalid` y `aria-live`).
+- **Rendimiento de Carga y Core Web Vitals:** Carga prioritaria del recurso LCP en el Hero y *lazy loading* nativo en imágenes secundarias.
+- **Diseño Responsive:** Adaptación fluida para smartphones, tablets y pantallas de escritorio mediante CSS Flexbox y Grid.
+
+---
+
+## 🏛️ Arquitectura del Proyecto
 
 ```text
 01-landing-clinica-lumina/
 ├── index.html                     # Documento HTML5 principal
 ├── src/
-│   ├── assets/                    # Iconos y recursos visuales optimizados
+│   ├── assets/                    # Iconos e imágenes optimizadas
 │   ├── css/
-│   │   └── styles.css             # Arquitectura CSS y variables de diseño (:root)
+│   │   └── styles.css             # Arquitectura CSS con variables (:root)
 │   └── js/
-│       └── main.js                # Interacciones DOM y validación de formularios
+│       └── main.js                # Interacciones DOM y validación
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-## ⚡ Guía de Inicio Rápido
+## 🚀 Instalación y Puesta en Marcha
 
-### 1. Clonar el Repositorio
-```bash
-git clone https://github.com/alxnrocha/landing-clinica-lumina.git
-cd landing-clinica-lumina
-```
+### Prerrequisitos
+- Navegador web moderno (Chrome, Firefox, Safari, Edge).
 
-### 2. Ejecutar en Local
-Al ser un proyecto desarrollado en Vanilla JavaScript, no requiere instalación de dependencias de Node.js:
-- Abra `index.html` directamente en su navegador web, o
-- Inicie un servidor local liviano con la extensión **Live Server** de VS Code o ejecutando `npx serve .`.
+### Pasos
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/alxnrocha/landing-clinica-lumina.git
+   cd landing-clinica-lumina
+   ```
+
+2. **Ejecutar en modo local:**
+   Al estar desarrollado con Vanilla Web Technologies, no requiere instalación de paquetes:
+   - Abra el archivo `index.html` directamente en su navegador, o
+   - Inicie un servidor local con **Live Server** de VS Code o ejecutando `npx serve .`.
 
 ---
 
-## 🧪 Calidad de Código y Pruebas
+## 🛡️ Calidad de Código & Testing
 
-- **Estándares Web:** Marcado HTML5 semántico y CSS3 puro validado contra las directrices oficiales del W3C.
-- **Accesibilidad (a11y):** Cumplimiento de pautas WCAG 2.1 nivel AA (contraste cromático, navegación integral por teclado y atributos ARIA).
-- **Rendimiento:** Carga diferida de imágenes secundarias (*lazy loading*) y prioridad en recurso LCP.
+- **Estándares W3C:** HTML5 y CSS3 validados contra directrices oficiales del W3C.
+- **Accesibilidad (a11y):** Verificación de contraste cromático, navegación por teclado y lectores de pantalla (WCAG 2.1 AA).
+- **Core Web Vitals:** Carga optimizada con puntuación verde en métricas LCP, CLS y FID.
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulte el archivo [LICENSE](./LICENSE) para más detalles.
+Este proyecto se encuentra bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
