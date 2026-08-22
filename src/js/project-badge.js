@@ -1,7 +1,7 @@
 (function () {
   const projectName = "Clínica Lumina";
   const projectUrl = "https://alxnrocha.github.io/landing-clinica-lumina/";
-  const description = "Landing Page Médica e Estética Avançada";
+  const description = "Advanced Aesthetic & Medical Clinic Landing Page";
 
   const badgeHtml = `
     <style>
@@ -171,7 +171,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="badge-pill"
-            title="Ver perfil de Alexandre Rocha no GitHub"
+            title="View Alexandre Rocha's GitHub profile"
           >
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -184,7 +184,7 @@
               <line x1="10" y1="14" x2="21" y2="3"/>
             </svg>
           </a>
-          <button class="badge-close" id="authorBadgeClose" title="Fechar (retorna em 5s)" aria-label="Fechar">
+          <button class="badge-close" id="authorBadgeClose" title="Close (returns in 5s)" aria-label="Close">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="18" y1="6" x2="6" y2="18"></line>
               <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -198,12 +198,12 @@
       </div>
 
       <p class="badge-desc">
-        ${description} • Desenvolvido por <a href="https://github.com/alxnrocha" target="_blank" rel="noopener noreferrer">Alexandre Rocha (@alxnrocha)</a>
+        ${description} • Developed by <a href="https://github.com/alxnrocha" target="_blank" rel="noopener noreferrer">Alexandre Rocha (@alxnrocha)</a>
       </p>
 
       <div class="badge-footer">
         <div class="badge-status">
-          <span class="badge-active"><span class="badge-dot"></span> ATIVO</span>
+          <span class="badge-active"><span class="badge-dot"></span> ACTIVE</span>
           <span class="badge-divider">|</span>
           <span class="badge-branch">⑂ main</span>
         </div>
