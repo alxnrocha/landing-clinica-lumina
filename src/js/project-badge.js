@@ -68,7 +68,11 @@
         font-size: 10px;
         font-weight: 800;
         letter-spacing: 0.5px;
-        text-transform: uppercase;
+        text-decoration: none;
+        transition: background-color 0.15s ease;
+      }
+      .badge-pill:hover {
+        background: #2ea043;
       }
       .badge-close {
         background: transparent;
@@ -147,19 +151,39 @@
         color: #c9d1d9;
         font-family: monospace;
       }
+      .badge-gh {
+        color: #8b949e;
+        text-decoration: none;
+        font-family: monospace;
+      }
+      .badge-gh:hover {
+        color: #58a6ff;
+        text-decoration: underline;
+      }
     </style>
 
     <div class="author-project-badge" id="authorProjectBadge">
       <div class="badge-header">
         <span class="badge-title">${projectName}</span>
         <div class="badge-tag-wrap">
-          <span class="badge-pill">
+          <a
+            href="https://github.com/alxnrocha"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="badge-pill"
+            title="Ver perfil de Alexandre Rocha no GitHub"
+          >
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               <path d="m9 12 2 2 4-4"/>
             </svg>
-            MEU PROJETO
-          </span>
+            <span>@alxnrocha</span>
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.8;">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
           <button class="badge-close" id="authorBadgeClose" title="Fechar (retorna em 5s)" aria-label="Fechar">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -183,7 +207,9 @@
           <span class="badge-divider">|</span>
           <span class="badge-branch">⑂ main</span>
         </div>
-        <span>Atualizado recentemente</span>
+        <a href="https://github.com/alxnrocha" target="_blank" rel="noopener noreferrer" class="badge-gh">
+          github.com/alxnrocha
+        </a>
       </div>
     </div>
   `;
