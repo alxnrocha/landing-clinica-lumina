@@ -1,7 +1,7 @@
 (function () {
-  const projectName = document.title ? document.title.split('|')[0].trim() : 'Clínica Lumina';
-  const projectUrl = 'https://alxnrocha.github.io/landing-clinica-lumina/';
-  const description = 'Landing Page Médica e Estética Avançada';
+  const projectName = "Clínica Lumina";
+  const projectUrl = "https://alxnrocha.github.io/landing-clinica-lumina/";
+  const description = "Landing Page Médica e Estética Avançada";
 
   const badgeHtml = `
     <style>
